@@ -2,15 +2,30 @@
 
 <html>
 <head>
-  <title>MemeMaker-Simple</title>
+  <title>Meme Maker</title>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <style>
+
     #image-container {
       display: flex;
     }
+
+    a:link, a:visited {
+      background-color: #f44336;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    a:hover, a:active {
+      background-color: red;
+    }
+
   </style>
 </head>
 
@@ -26,7 +41,7 @@
       <input id="topLineText" type="text"><br/>
       <span>Bottom Line:</span><br/>
       <input id="bottomLineText" type="text"><br/>
-      <button id="saveBtn">Save</button>
+      <a href="#" id="saveBtn" download="Meme.png">Save</a>
     </div>
   </div>
   <script src="script.js"></script>
